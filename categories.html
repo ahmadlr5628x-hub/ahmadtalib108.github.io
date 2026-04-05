@@ -1,0 +1,16 @@
+---
+layout: default
+title: Categories
+---
+
+<h1 style="text-align:center;">Categories</h1>
+
+{% for category in site.categories %}
+    <h2>{{ category[0] }}</h2>
+
+    {% for post in category[1] %}
+        <div class="card">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+    {% endfor %}
+{% endfor %}
