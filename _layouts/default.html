@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Ahmad Talib</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/categories.html">Categories</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+
+    <input type="text" id="searchBox" placeholder="Search..." onkeyup="searchPosts()">
+</div>
+
+{{ content }}
+
+<footer>
+    <p>© 2026 Ahmad Talib | Developer Blog</p>
+</footer>
+
+<script src="/js/search.js"></script>
+</body>
+</html>
